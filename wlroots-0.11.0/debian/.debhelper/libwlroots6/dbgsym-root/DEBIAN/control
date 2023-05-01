@@ -1,0 +1,13 @@
+Package: libwlroots6-dbgsym
+Source: wlroots
+Version: 0.11.0-3
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Sway and related packages team <team+swaywm@tracker.debian.org>
+Installed-Size: 977
+Depends: libwlroots6 (= 0.11.0-3)
+Section: debug
+Priority: optional
+Multi-Arch: same
+Description: debug symbols for libwlroots6
+Build-Ids: d735dcb5e1c221cc57ebd4f2f70061b3b331618e

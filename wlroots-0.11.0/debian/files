@@ -1,0 +1,6 @@
+libwlroots-dev_0.11.0-3_amd64.deb libdevel optional
+libwlroots-examples-dbgsym_0.11.0-3_amd64.deb debug optional automatic=yes
+libwlroots-examples_0.11.0-3_amd64.deb libs optional
+libwlroots6-dbgsym_0.11.0-3_amd64.deb debug optional automatic=yes
+libwlroots6_0.11.0-3_amd64.deb libs optional
+wlroots_0.11.0-3_amd64.buildinfo libs optional
