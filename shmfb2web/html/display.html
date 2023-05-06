@@ -10,7 +10,7 @@
 </style>
 <body>
 
-Keyboard:&nbsp<input type="text" id="input"><br><br>
+<!--Keyboard:&nbsp<input type="text" id="input"><br><br>-->
 <canvas id="display" width="100" height="100"></canvas><br>
 
 </body>
@@ -22,14 +22,14 @@ var socket = new WebSocket("ws://" + document.domain + ':' + location.port, "vid
 socket.binaryType = "arraybuffer";
 
 const disp = document.getElementById("display");
-const inp = document.getElementById("input");
+//const inp = document.getElementById("input");
 
-inp.onkeydown = function(evt) {
+window.onkeydown = function(evt) {
 	if (evt.key === " ") socket.send("input: keyboard keydown 1 " + "Space" + " 0");
 	else socket.send("input: keyboard keydown 1 " + evt.key + " 0");
 };
 
-inp.onkeyup = function(evt) {
+window.onkeyup = function(evt) {
 	if (evt.key === " ") socket.send("input: keyboard keyup 1 " + "Space" + " 0");
 	else socket.send("input: keyboard keyup 1 " + evt.key + " 0");
 };
