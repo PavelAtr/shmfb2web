@@ -17,6 +17,7 @@ PREFIX=/usr make install
 dd if=/dev/urandom bs=8192 count=768 > /dev/shm/shmfb
 
 shmfb2wev
+
 firefox http://127.0.0.1:8000
 
 
